@@ -1,0 +1,34 @@
+.myForm {
+    margin: 10rem auto;
+    text-align: center;
+  }
+  
+  .login-form {
+    text-align: center;
+    margin: 1rem auto;
+    vertical-align: middle;
+  }
+
+  .login-form input {
+      display: block;
+      margin: 1rem auto;
+  }
+  
+  .login-form [type="email"], [type="password"], [type="text"] {
+    padding: 5px 8px;
+    width: 250px;
+    border: 2px solid rgb(246, 248, 210);
+  }
+  
+  .login-form [type="button"] {
+    height: 2.5rem;
+    width: 5.5rem;
+    color: white;
+    background-color: rgb(153, 212, 146);
+    border: 2px solid rgb(236, 238, 142);
+    border-radius: 25px;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+  }

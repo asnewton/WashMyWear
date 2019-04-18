@@ -1,0 +1,263 @@
+* {
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+body {
+ margin: 0px;
+ font-family: 'segoe ui';
+}
+
+.nav {
+ z-index: 1;
+ width: 100vw;
+ height: 4rem;
+ margin: 0;
+ padding: 0;
+ background:white;
+ vertical-align: middle;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+
+.nav > .nav-header {
+ display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+ display: inline-block;
+ font-size: 22px;
+ color: rgb(59, 56, 56);
+ padding: 10px 10px 10px 10px;
+}
+
+#brand-one {
+ color: #ff9933;
+}
+
+#brand-two {
+ color: #000080;
+}
+
+#brand-three {
+ color: #138808;
+}
+.nav > .nav-btn {
+ display: none;
+}
+
+.nav > .nav-links {
+ /* display: inline; */
+ float: right;
+ font-size: 18px;
+ margin: auto 2rem;
+ margin-left: auto;
+}
+
+.nav > .nav-links > a {
+ text-decoration: none;
+ font-size: 18px;
+ color: rgb(228, 111, 111);
+ margin-left: 3rem;
+}
+
+.nav > .nav-links > a:hover,
+.nav > .nav-links > a:active {
+ color: #749e00;
+ border-bottom: 1px solid #749e00;
+}
+
+
+.nav > #nav-check {
+ display: none;
+}
+
+.main-nav__item--cta {
+ border: 1px solid rgb(185, 181, 181);
+ background: white;
+ padding: 4px 6px;
+}
+
+.main-nav__item--cta:hover,
+.main-nav__item--cta:active {
+ background: rgb(228, 228, 228);
+}
+
+@media (max-width:905px) {
+ .nav > .nav-btn {
+   display: inline-block;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+ }
+ .nav > .nav-btn > label {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   padding: 13px;
+   background: #a0c290
+ }
+ .nav > .nav-btn > label:hover {
+   background-color: rgba(0, 0, 0, 0.692);
+ }
+ .nav > .nav-btn > label > span {
+   display: block;
+   width: 25px;
+   height: 10px;
+   border-top: 2px solid #eee;
+ }
+ .nav > .nav-links {
+   position: absolute;
+   display: block;
+   width: 100%;
+   background-color: rgb(8, 8, 8);
+   height: 0px;
+   transition: all 0.3s ease-in;
+   overflow-y: hidden;
+   top: 50px;
+   left: 0px;
+ }
+ .nav > .nav-links > a {
+   display: block;
+   width: 100%;
+   margin: 1.5rem;
+   font-size: 35px;
+ }
+ .nav > #nav-check:not(:checked) + .nav-links {
+   height: 0px;
+ }
+ .nav > #nav-check:checked + .nav-links {
+   height: calc(100vh - 50px);
+   overflow-y: auto;
+ }
+}
+/* .main-header {
+  z-index: 1;
+  width: 100vw;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  background:white;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hamburger {
+  display: inline-block;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.hamburger__button {
+  width: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hamburger__button:focus {
+  outline: none;
+}
+
+.hamburger__button--bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 13rem);
+  vertical-align: middle;
+}
+
+.main-nav__brand {
+  color: #e03c3cc9;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#brand-one {
+  color: #ff9933;
+}
+
+#brand-two {
+  color: #000080;
+}
+
+#brand-three {
+  color: #138808;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(228, 111, 111);
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #749e00;
+  border-bottom: 1px solid #749e00;
+}
+
+.main-nav__item--cta {
+  border: 1px solid rgb(185, 181, 181);
+  background: white;
+  padding: 4px 6px;
+}
+
+.main-nav__item--cta:hover,
+.main-nav__item--cta:active {
+  background: rgb(228, 228, 228);
+}
+
+@media (min-width: 40rem) {
+  .hamburger {
+    display: none;
+  }
+
+  .main-nav__items {
+    margin-top: 1rem;
+  }
+
+  .main-header > div {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .main-nav {
+    display: none;
+  }
+}
+ */
+

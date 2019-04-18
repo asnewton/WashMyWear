@@ -1,0 +1,59 @@
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      <a href="#" class="hvr-grow-shadow" style="text-decoration: none"
+      ><span id="brand-one">Wash</span><span id="brand-two">My</span
+      ><span id="brand-three">Wear</span></a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a style="border-bottom: none" routerLink="/login">Get franchise</a>
+    <a style="border-bottom: none" href="#{{ work_id }}">How it works?</a>
+    <a style="border-bottom: none" href="#{{ price_id }}">Pricing</a>
+    <a *ngIf="!isAuthenticated" style="border-bottom: none" routerLink="/login">Login</a>
+    <a *ngIf="!isAuthenticated" class="main-nav__item--cta" routerLink="/signup">Create an account</a>
+    <a *ngIf="isAuthenticated" style="border-bottom: none" routerLink="/profile">Profile</a>
+  </div>
+</div>
+<!-- <header class="main-header ">
+  <nav class="hamburger">
+    <button class="hamburger__button">
+      <span class="hamburger__button--bar"></span>
+      <span class="hamburger__button--bar"></span>
+      <span class="hamburger__button--bar"></span>
+    </button>
+  </nav>  
+  <div>
+    <a href="#" class="main-nav__brand hvr-grow-shadow"
+      ><span id="brand-one">Wash</span><span id="brand-two">My</span
+      ><span id="brand-three">Wear</span></a
+    >
+  </div>
+  <nav class="main-nav">
+    <ul class="main-nav__items">
+      <li class="main-nav__item hvr-grow-shadow">
+        <a routerLink="/login">Get franchise</a>
+      </li>
+      <li class="main-nav__item hvr-grow-shadow">
+        <a href="#{{ work_id }}">How it works?</a>
+      </li>
+      <li class="main-nav__item hvr-grow-shadow">
+        <a href="#{{ price_id }}">Pricing</a>
+      </li>
+      <li class="main-nav__item hvr-grow-shadow">
+        <a routerLink="/login">Login</a>
+      </li>
+      <li class="main-nav__item main-nav__item--cta hvr-grow-shadow">
+        <a routerLink="/signup" style="border-bottom:none">Create an account</a>
+      </li>
+    </ul>
+  </nav>
+</header> -->
